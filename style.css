@@ -1,0 +1,469 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    transition: padding 0.3s ease;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+}
+
+.logo:hover {
+    color: orangered;
+    text-shadow: 0 0 25px orangered;
+    transform: scale(1.1);
+}
+
+span {
+    color: orangered;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+.contact {
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.contact:hover {
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+}
+
+/* Home Section */
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(245, 222, 179, 0.26);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    gap: 3em;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 36px;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.btn-box {
+    display: flex;
+    gap: 1.5em;
+}
+
+.btn-1, .btn-2 {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-1 {
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.btn-1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn-2 {
+    background-color: orangered;
+    color: white;
+    border: 2px solid black;
+}
+
+.btn-2:hover {
+    background-color: white;
+    color: orangered;
+}
+
+.img-box img {
+    width: 400px;
+    border-radius: 51%;
+    transition: width 0.3s ease;
+    border: 4px solid orangered;
+}
+
+.img-box img:hover {
+    width: 450px;
+    box-shadow: 0 0 25px orangered;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8% 10%;
+    background: black;
+    color: white;
+    gap: 2em;
+}
+
+.about-img img {
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px orangered;
+    transition: 0.3s ease;
+}
+
+.about-img img:hover {
+    width: 430px;
+    box-shadow: 0 0 50px rgb(234, 71, 6);
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+}
+
+.about-content h3 {
+    font-size: 48px;
+    margin-top: 10px;
+}
+
+.about-content p {
+    font-size: 18px;
+    margin: 20px 0 10px;
+}
+
+/* Feedback Form */
+.feedback-form h2 {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+
+.feedback-form form {
+    max-width: 600px;
+    margin: 1rem auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.feedback-form form .input-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.feedback-form form .input-box input, 
+.feedback-form form textarea {
+    width: 100%;
+    padding: 1.2em;
+    font-size: 18px;
+    background-color: whitesmoke;
+    border-radius: .8em;
+    margin: 0.5rem 0;
+}
+
+.feedback-form form textarea {
+    resize: none;
+}
+
+.feedback-form .btn-1 {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer .social {
+    margin-bottom: 15px;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: white;
+    border: 2px solid orangered;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    transition: transform 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.footer .social a:hover {
+    transform: scale(1.1);
+    color: orangered;
+    border: 2px solid orangered;
+}
+
+.footer ul {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid orangered;
+}
+
+.footer .copyright {
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust Header */
+    header {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+    .contact {
+   
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Home Section */
+    .home {
+        flex-direction: column;
+        padding: 20px 5%;
+        gap: 1.5em;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .home-content h3 {
+        font-size: 30px;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .btn-box {
+        width: 100%;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .img-box img {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+
+    /* About Section */
+    .about {
+        flex-direction: column;
+        padding: 10% 5%;
+    }
+
+    .about-img img {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .about-content {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .about-content h2,
+    .about-content h3 {
+        font-size: 32px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+        margin: 2em 0 1em;
+    }
+
+    /* Feedback Form */
+    .feedback-form form {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .feedback-form form .input-box {
+        flex-direction: column;
+    }
+
+    .feedback-form form .input-box input,
+    .feedback-form form textarea {
+        width: 100%;
+    }
+/* Laptop Specific Styles */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    /* General adjustments for larger screens */
+    header {
+        padding: 20px 0;
+        justify-content: space-between;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 0 20px;
+    }
+
+    .contact {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+
+    .home {
+        padding: 40px 15%;
+    }
+
+    .home-content h3 {
+        font-size: 40px;
+    }
+
+    .home-content h1 {
+        font-size: 56px;
+    }
+
+    .about {
+        padding: 10% 15%;
+    }
+
+    .about-content h2 {
+        font-size: 40px;
+    }
+
+    .about-content h3 {
+        font-size: 52px;
+    }
+
+    .feedback-form h2 {
+        font-size: 40px;
+    }
+
+    .feedback-form form {
+        max-width: 700px;
+    }
+
+    .footer .social a {
+        font-size: 26px;
+    }
+
+    .footer ul li {
+        padding: 0 20px;
+    }
+}
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}

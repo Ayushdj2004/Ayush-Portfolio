@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ 
+</head>
+<body>
+    <header>
+        <a href="#Home" class="logo"><span class="orge">Ayu</span>sh</a>
+
+        <nav class="navbar">
+            <a href="#Home" class="active">Portfolio</a>
+            <a href="#About">About</a>
+            <a href="#Education">Education</a>
+            <a href="#FeedBack">FeedBack</a>
+        </nav>
+
+        <a href="mailto:ayushdj2004@gmail.com" class="contact">Contact</a>
+
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Hi</h3>
+
+            <h1>I'm <span>Ayush<br></span><span id="element" style="color:black"></span></h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum fuga odio quaerat magnam omnis sed ex eaque. Possimus obcaecati, numquam debitis explicabo voluptatem doloribus quisquam illum exercitationem quidem consequuntur veniam.
+            </p>
+
+            <div class="btn-box">
+                <button class="btn-1">Hire Me</button>
+                <button class="btn-2">Resume</button>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="Image.png" alt="">
+        </div>
+    </section>
+
+
+    <section class="about">
+        <div class="about-img">
+            <img src="Image.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend <span>Developer</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repudiandae voluptatem nisi odit? Consectetur debitis voluptatum inventore laboriosam eligendi, iste tenetur officia molestias corporis voluptates fugiat, expedita ipsum illo aut!</p>
+        </div>
+    </section>
+
+    <section class="feedback-form">
+        <h2 class="feedback">Feed<span>back</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" name="full-name" required>
+                <input type="email" placeholder="Email" name="email" required>
+            </div>
+            <div class="input-box">
+                <input type="tel" placeholder="Phone Number" name="phone-number" pattern="[0-9]{10}" required>
+                <input type="text" placeholder="Subject" name="subject" required>
+            </div>
+    
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn-1">
+        </form>
+    </section>
+    
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/ayush.jakhmola.10">
+                <i class='bx bxl-facebook-circle'></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ayush-jakhmola-769107249/">
+                <i class='bx bxl-linkedin-square' ></i>
+            </a>
+            <a href="https://www.instagram.com/ayushjakhmola_24/">
+                <i class='bx bxl-instagram' ></i>
+            </a>
+        </div>
+
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+
+        <p class="copyright">@ 2024 Ayush | All Rights Reserved</p>
+    </footer>
+ 
+  
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script>
+    var typed = new Typed('#element', {
+        strings: ['Frontend Developer', 'Good Listener','Computer Engineer','Youtuber'],
+        typeSpeed: 50,
+        loop: true,
+    });
+    
+  </script>
+</body>
+</html>
